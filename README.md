@@ -36,9 +36,9 @@ function a(functionx,functiony){
 // + 들여쓰기는 스페이스 또는 탭 사용
 // GOOD
 for(var i=0;i<10;i++){
-   if(i==2){
-      console.log(i);
-   }
+    if(i==2){
+       console.log(i);
+    }
 }
 // BAD
 for(var i=0;i<10;i++){
@@ -98,7 +98,7 @@ console.table([1,2,3,4,5]); // 콘솔 Array 출력
 
 console.time('timer');// 타이머 시작
 for(var i=0; i < 1000; i++){
-  1+1
+  1+1;
 }
 console.timeEnd('timer'); //타이머 종료
 ```
