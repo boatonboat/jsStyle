@@ -9,7 +9,9 @@ language : (kr)
 #### js 변수 선언 (1)
 ``` js
 // GOOD
-var a,b,c;
+var a = 10;
+var b = 10
+var c = 10;
 // BAD
 var a=10,b=10,c=10;
 ```
