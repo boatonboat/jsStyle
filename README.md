@@ -4,6 +4,7 @@
 language : (kr)
 작성자 : 보트
 읽는데 걸리는 시간 : 약 7분
+언어 번역자를 찾고 있습니다.
 ```
 
 #### 변수 선언 (1)
@@ -75,11 +76,31 @@ var xcount = 0;
 var x = 1000;
 var x2 = 0;
 ```
-#### 세미콜론 사용
+#### if문 한줄일때 중괄호 생략
 ```js
+// + 실행할 코드가 한 줄일때는 중괄호 생략 O
 // GOOD
-var a = 10 + 2 + 3;
-console.log("Hello World"+a);
+if(a==b)
+   console.log(a,b);
 // BAD
-var a = 10 + 2 + 3
-console.log("Hello World"+a)
+if(a==b){
+   console.log(a,b);
+}
+```
+# 꿑팁
+#### 크롬 console을 자주 이용
+```js
+// + 크롬 콘솔은 생각보다 기능이 많다
+// + F12 또는 ctrl+ shift + i 로 콘솔창 킬 수 있음
+console.log("1.2.3"); // 콘솔 출력
+
+console.table([1,2,3,4,5]); // 콘솔 Array 출력
+
+console.time('timer');// 타이머 시작
+for(var i=0; i < 1000; i++){
+  1+1
+}
+console.timeEnd('timer'); //타이머 종료
+```
+=실행화면
+![image](https://user-images.githubusercontent.com/43812153/47266003-3445b280-d56b-11e8-9bff-488fedfc0b1c.png)
