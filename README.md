@@ -55,4 +55,23 @@ var mouserotaion = 0;
 var a = 0;
 var r = 0;
 ```
+#### 세미콜론 사용
+```js
+// GOOD
+var a = 10 + 2 + 3;
+console.log("Hello World"+a);
+// BAD
+var a = 10 + 2 + 3
+console.log("Hello World"+a)
 
+//ex 코드를 압축했을때 인터프리터가 코드를 구분 할 수 없다.
+```
+#### 비슷한 변수 이름 사용 X
+```js
+// GOOD
+var x = 1000;
+var xcount = 0;
+// BAD
+var x = 1000;
+var x2 = 0;
+```
