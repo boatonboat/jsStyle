@@ -75,3 +75,11 @@ var xcount = 0;
 var x = 1000;
 var x2 = 0;
 ```
+#### 세미콜론 사용
+```js
+// GOOD
+var a = 10 + 2 + 3;
+console.log("Hello World"+a);
+// BAD
+var a = 10 + 2 + 3
+console.log("Hello World"+a)
