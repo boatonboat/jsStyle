@@ -30,3 +30,29 @@ function a(functionx,functiony){
   var y = functiony;
 }
 ```
+#### 들여쓰기 사용
+```js
+// + 들여쓰기는 스페이스 또는 탭 사용
+// GOOD
+for(var i=0;i<10;i++){
+   if(i==2){
+      console.log(i);
+   }
+}
+// BAD
+for(var i=0;i<10;i++){
+if(i==2){
+console.log(i);
+}
+}
+```
+#### 변수에 관련 있는 이름 사용
+```js
+// GOOD
+var appleCount = 0; 
+var mouserotaion = 0;
+// BAD
+var a = 0;
+var r = 0;
+```
+
