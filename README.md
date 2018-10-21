@@ -6,7 +6,7 @@ language : (kr)
 읽는데 걸리는 시간 : 약 7분
 ```
 
-#### js 변수 선언 (1)
+#### 변수 선언 (1)
 ``` js
 // GOOD
 var a = 10;
@@ -15,5 +15,18 @@ var c = 10;
 // BAD
 var a=10,b=10,c=10;
 ```
-<br>
 
+#### 매개변수 접속사 사용
+```js
+//ex 첫글자 대문자 , 접속사 사용
+// GOOD
+function a(x_,y_){
+   var x = x_;
+   var y = y_;
+}
+// BAD
+function a(functionx,functiony){
+  var x = functionx;
+  var y = functiony;
+}
+```
